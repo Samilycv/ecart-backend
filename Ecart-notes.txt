@@ -1,0 +1,30 @@
+                                Backend for Ecart
+
+                                Node Server Creation
+                ------------------------------------------------------------                
+
+        1. Create a folder in the Ecart (ecart-backend)
+        2. Create package.json file - npm init or npm init -y
+        3. Install express and some other
+            -npm i express cors mongoose dotenv
+            -Express  - Nodejs framework and It create an application in backend
+            -Cors - Used to connect two different ports (fontend - 4200 and backend - 5000) - npm i cors
+            -Mongoose - This library used to connect node and mongodb
+            -dotenv - This is environment variable, that are used to store app secrets and configuration
+        4. Create .gitignore file and .env file
+        5. Create index.js(main entry point) and run the file - nodemon index.js
+
+                                Mongodb Atlas configuration
+                   --------------------------------------------------------------             
+        6. Add connection string to .env file
+           -In mongodb atlas take database->connect->Drivers->copy connection string and paste in .env file
+                DATABASE=mongodb+srv://Samily:Mearnstack@cluster0.agzqena.mongodb.net/e-cart?retryWrites=true&w=majority
+                (edit the password(Mearnstack) and add database name(e-cart))
+        7. Create a connection.js file for connect node and mongodb
+        8. Use mongoose to connect mongodb with node application
+        9. Import connection.js in index.js
+        10. Create Model/Collection to store products - model/productSchema.js and export It
+        11. To define routes for client requests - routes/router.js
+        12. To Create controller folder  inorder to define the logic to resolve the API requests 
+        
+        
